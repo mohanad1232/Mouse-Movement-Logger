@@ -30,6 +30,18 @@ function handleMouseClick(event) {
   }
 }
 
+// Function to check for "Enter" key press (Key code 13)
+function checkEnterKeyPress(event) {
+  // Check if the pressed key is "Enter" (Key code 13)
+  if (event.key === "Enter") {
+    console.log("Pressed 'Enter' key (Key code 13).");
+  }
+}
+
+// Add an event listener for the "keydown" event to check for "Enter" key press
+targetElement.addEventListener('keydown', checkEnterKeyPress);
+
+
 // Add an event listener to detect mouse down (button press)
 targetElement.addEventListener('mousedown', handleMouseClick);
 
