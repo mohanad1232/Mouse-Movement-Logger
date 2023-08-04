@@ -1,4 +1,5 @@
 Mouse Movement Logger
+
 Description
 This JavaScript code records mouse movements on a webpage and displays the mouse coordinates (X and Y) in the console. It uses event listeners to detect mouse movements and log the coordinates whenever the mouse is moved on the page.
 
@@ -26,6 +27,7 @@ Compatibility
 This code is written in JavaScript and should work in modern web browsers that support event handling. Please ensure your target browsers support the mousemove event.
 
 Mouse Click Detector
+
 Description
 This JavaScript code is a simple utility to detect mouse clicks on a webpage and identify whether the left or right mouse button was clicked. It uses event listeners to capture both the mousedown (button press) and mouseup (button release) events to determine which mouse button was clicked.
 
