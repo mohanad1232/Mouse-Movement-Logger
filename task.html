@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body style="height: 100vw;width: 100vw;">
+
+<h1>Right-click and select (Inspect) to see the magic</h1>
+
+</body>
+<script>
+    // Select the target element to log mouse movements on
+const targetElement = document.body;
+
+// Function to log and print mouse movements
+function logMouseMovement(event) {
+  const { clientX, clientY } = event;
+  console.log(`Mouse moved to position (X: ${clientX}, Y: ${clientY})`);
+}
+
+// Add an event listener to log mouse movements on the target element
+targetElement.addEventListener('mousemove', logMouseMovement);
+
+
+
+// Function to handle mouse clicks
+function handleMouseClick(event) {
+  // event.button = 0 for left mouse button, 2 for right mouse button
+  if (event.button === 0) {
+    console.log("Left mouse button clicked!");
+  } else if (event.button === 2) {
+    console.log("Right mouse button clicked!");
+  }
+}
+
+// Add an event listener to detect mouse down (button press)
+targetElement.addEventListener('mousedown', handleMouseClick);
+
+// Add an event listener to detect mouse up (button release)
+targetElement.addEventListener('mouseup', handleMouseClick);
+
+</script>
+</html>
